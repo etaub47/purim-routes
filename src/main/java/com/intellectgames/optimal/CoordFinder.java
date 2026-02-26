@@ -35,6 +35,7 @@ public class CoordFinder {
             if (coord != null) {
                 coords.put(address, coord);
             } else {
+                System.err.println("Failed geocoding for " + address);
                 failedLookups++;
             }
         }
